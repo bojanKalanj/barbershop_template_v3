@@ -1,0 +1,153 @@
+/* Global Styles */
+:root {
+    --black: #000;
+    --light: #fff;
+    --pink: #efadad;
+    --yellow: #fabc2e;
+    --red: #dd3c30;
+    --green: #00ad86;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: var(--black);
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Recoleta;
+    src: url(./fonts/Recoleta-Bold.woff);
+}
+
+@font-face {
+    font-family: Inconsolata-Regular;
+    src: url(./fonts/Inconsolata-Regular.ttf);
+}
+
+h1 {
+    font-size: 12.583vw;
+    line-height: 12.5vw;
+    font-family: Recoleta;
+    letter-spacing: -0.146vw;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.094vw;
+    font-family: Inconsolata-Regular;
+    text-transform: capitalize;
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: -.1px;
+    line-height: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 2vw;
+    line-height: 2.604vw;
+    letter-spacing: -0.02vw;
+    font-family: Inconsolata-Regular;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    -webkit-transition: all .6s 0s cubic-bezier(.19, 1, .22, 1);
+    transition: all .6s 0s cubic-bezier(.19, 1, .22, 1);
+}
+
+.links-red a {
+    color: var(--red);
+}
+
+.links-light a {
+    color: var(--light);
+}
+
+.nav-logo-red {
+    color: var(--red);
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    margin-left: 30px;
+}
+
+.nav-shadow {
+    box-shadow: 0 22px 24px 0 rgba(0, 0, 0, .3);
+    width: 90%;
+    top: 3%;
+    left: 5%;
+    right: 5%;
+    background: inherit;
+}
+
+.nav-logo {
+    font-family: Recoleta;
+    font-size: 1.5vw;
+}
+
+/* Index */
+.index {
+    min-height: 500vh;
+    background: var(--pink);
+}
+
+/* About */
+.about {
+    min-height: 500vh;
+    background: var(--light);
+}
+
+/* Gallery */
+.gallery {
+    min-height: 500vh;
+    background: var(--red);
+    color: var(--light);
+}
+
+.contact {
+    min-height: 500vh;
+    background: var(--green);
+}
